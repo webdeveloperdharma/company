@@ -22,8 +22,8 @@ Django Questions :
 1. What command line interface instructions are required to create a django project called
 ‘company’ and application called ‘staff’?
 
-Sol : Command to create a project in django : "django-admin startproject company"
-	  Command to create an application 		: "python manage.py startapp staff"
+**Solution : Command to create a project in django : "django-admin startproject company"
+             Command to create an application : "python manage.py startapp staff"**
 	  
 	  
 
@@ -48,12 +48,10 @@ the Employee objects you should be able to filter by department and date of birt
 
 When creating/editing a Department object there should be inlines for each of the Employee objects in the Department.
 		
-	
- 
 4. What command line interface instructions are required to be able to test the admin interface after you have completed #2 and #3 above?
-Sol : 1. Create an admin user using the command : "python manage.py createsuperuser"
-	  2. After the above command we have to type username, email_id and password then it creates an admin user.
-	  3. To access the admin interface in local server, we have to type : 127.0.0.1:8000/admin
+**Solution : 1. Create an admin user using the command : "python manage.py createsuperuser"
+	     2. After the above command we have to type username, email_id and password then it creates an admin user.
+	     3. To access the admin interface in local server, we have to type : 127.0.0.1:8000/admin**
 		
  
 5. views.py (Department) - Using generic class-based views please write the following views for the Department objects: list and detail
@@ -63,15 +61,15 @@ Sol : 1. Create an admin user using the command : "python manage.py createsuperu
  
 7. views.py (Employee) - Using a generic class-based view use the form in #6 in a create view for Employee objects. 
 		Is your models.py class for Employee compatible with the form and view?
-Sol : Yes the Employee model is compatible with both form and view. Employee model is being used in ModelForm and this 
-				ModelForm is being used for class based CreateView
+**Solution : Yes the Employee model is compatible with both form and view. Employee model is being used in ModelForm and this 
+	     ModelForm is being used for class based CreateView**
 
  
 8. What template files would be required for the views in #5 and #7 to work? Where would you put these files?
-Sol :	For #5 : 'department_list.html' is required for the list of Department objects
-		For #5 : 'department_detail.html' is required for the details of individual Department object.
-		For #7 : 'employee_form.html' is required for the displaying the form and creating a user.
+**Solution : For #5 : 'department_list.html' is required for the list of Department objects
+	     For #5 : 'department_detail.html' is required for the details of individual Department object.
+	     For #7 : 'employee_form.html' is required for the displaying the form and creating a user.
 		
-		All these files were kept in "company\staff\templates" folder i.e. inside the staff application.
+	     All these files were kept in "company\staff\templates" folder i.e. inside the staff application.**
 		
 		
