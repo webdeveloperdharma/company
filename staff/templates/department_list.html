@@ -1,0 +1,15 @@
+<h2>Department</h2>
+
+    <table>
+        <tr>
+            <th> Department Name </th>
+            <th> Manager Name </th>
+        </tr>
+        {% for department in object_list %}
+            <tr>
+                <td>{{ department.department_name }}</td>
+                <td>{{ department.manager }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
